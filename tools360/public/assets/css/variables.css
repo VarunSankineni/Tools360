@@ -1,0 +1,22 @@
+/* Design tokens: colors, fonts, radii. Change the brand here. */
+:root{
+  --primary:#0F766E;--primary-dark:#115E59;--primary-soft:#CCFBF1;--on-primary:#FFFFFF;
+  --accent:#F97316;--accent-dark:#EA580C;
+  --bg:#F8FAFC;--surface:#FFFFFF;--surface-2:#F1F5F9;
+  --text:#0F172A;--muted:#64748B;--border:#E2E8F0;
+  --success:#16A34A;--error:#DC2626;--error-bg:#FEF2F2;--warn-bg:#FFF7ED;
+  --radius:12px;--radius-sm:8px;
+  --shadow:0 1px 2px rgba(15,23,42,.06),0 6px 20px rgba(15,23,42,.06);
+  --font-body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --font-head:'Plus Jakarta Sans','Inter',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --pdf:#0F766E;--pdf-bg:#CCFBF1;--image:#4338CA;--image-bg:#E0E7FF;
+  --convert:#C2410C;--convert-bg:#FFEDD5;--utilities:#475569;--utilities-bg:#E2E8F0;
+}
+[data-theme="dark"]{
+  --primary:#2DD4BF;--primary-dark:#5EEAD4;--primary-soft:#0F2E2C;--on-primary:#062B28;
+  --bg:#0B1220;--surface:#121A2B;--surface-2:#1A2438;--text:#E6EDF7;--muted:#94A3B8;--border:#26324A;
+  --error-bg:#2B1416;--warn-bg:#2A1D10;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.3);
+  --pdf:#5EEAD4;--pdf-bg:#0F2E2C;--image:#A5B4FC;--image-bg:#1E2247;
+  --convert:#FDBA74;--convert-bg:#3A2312;--utilities:#CBD5E1;--utilities-bg:#26324A;
+}

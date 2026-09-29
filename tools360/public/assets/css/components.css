@@ -1,0 +1,62 @@
+/* Reusable UI pieces: buttons, chips, tiles, forms, FAQ, banner. */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 20px;border-radius:10px;border:1px solid transparent;font-weight:600;font-size:.95rem;cursor:pointer;transition:background .15s,border-color .15s,transform .05s;text-decoration:none}
+.btn:active:not(:disabled){transform:translateY(1px)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn-primary{background:var(--primary);color:var(--on-primary)}
+.btn-primary:hover:not(:disabled){background:var(--primary-dark)}
+.btn-cta{background:var(--accent);color:#fff;padding:14px 28px;font-size:1.05rem}
+.btn-cta:hover:not(:disabled){background:var(--accent-dark)}
+.btn-ghost{background:transparent;border-color:var(--border);color:var(--text)}
+.btn-ghost:hover:not(:disabled){background:var(--surface-2)}
+.btn.small{padding:7px 14px;font-size:.88rem}
+.btn.is-busy::after{content:"";width:16px;height:16px;border:2px solid #fff;border-top-color:transparent;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;min-width:38px;height:38px;padding:0 10px;border-radius:9px;border:1px solid var(--border);background:var(--surface);cursor:pointer;font-size:.9rem}
+.icon-btn:hover:not(:disabled){background:var(--surface-2)}
+.icon-btn:disabled{opacity:.4;cursor:not-allowed}
+.chip{padding:8px 18px;border-radius:999px;border:1px solid var(--border);background:var(--surface);cursor:pointer;font-weight:500;font-size:.92rem}
+.chip:hover{border-color:var(--primary)}
+.chip[aria-pressed="true"]{background:var(--primary);border-color:var(--primary);color:var(--on-primary)}
+.search{max-width:580px;margin:0 auto 24px}
+.search input{width:100%;padding:16px 20px;font-size:1.05rem;border-radius:14px;border:1px solid var(--border);background:var(--surface);box-shadow:var(--shadow)}
+.search input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px var(--primary-soft)}
+.tool-tile{display:flex;flex-direction:column;gap:8px;padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);text-decoration:none;color:var(--text);transition:border-color .15s,box-shadow .15s}
+.tool-tile:hover{border-color:var(--primary);box-shadow:var(--shadow)}
+.tool-tile h3{margin:0}
+.tool-tile p{margin:0;color:var(--muted);font-size:.92rem}
+.badge{align-self:flex-start;padding:4px 10px;border-radius:8px;font-family:var(--font-head);font-weight:800;font-size:.8rem;letter-spacing:.02em}
+.badge-pdf{background:var(--pdf-bg);color:var(--pdf)}
+.badge-image{background:var(--image-bg);color:var(--image)}
+.badge-convert{background:var(--convert-bg);color:var(--convert)}
+.badge-utilities{background:var(--utilities-bg);color:var(--utilities)}
+.empty-msg{text-align:center;color:var(--muted);padding:32px 0}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;font-weight:500;font-size:.95rem}
+.field small{color:var(--muted);font-weight:400}
+.field input[type=text],.field input[type=number],.field input[type=email],.field select,.field textarea{width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:10px;background:var(--surface)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-soft)}
+.field textarea{min-height:130px;resize:vertical}
+.field input[type=color]{width:64px;height:40px;padding:2px;border:1px solid var(--border);border-radius:8px;background:var(--surface)}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.range-line{display:flex;align-items:center;gap:12px}
+.range-line input{flex:1;accent-color:var(--primary)}
+.range-value{min-width:48px;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.check{flex-direction:row;align-items:center;gap:10px}
+.check input{width:18px;height:18px;accent-color:var(--primary)}
+.notice{background:var(--warn-bg);border:1px solid var(--accent);padding:12px 14px;border-radius:10px;font-size:.92rem;margin-bottom:16px}
+.faq details{border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);padding:0 18px;margin-bottom:10px}
+.faq summary{cursor:pointer;padding:16px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--muted);font-size:1.2rem;line-height:1}
+.faq details[open] summary::after{content:"\2013"}
+.faq details p{color:var(--muted)}
+#cookie-banner{position:fixed;left:16px;right:16px;bottom:16px;max-width:740px;margin:0 auto;background:var(--surface);border:1px solid var(--border);border-radius:14px;box-shadow:0 10px 36px rgba(15,23,42,.2);padding:16px 18px;display:flex;gap:16px;align-items:center;z-index:100}
+#cookie-banner p{margin:0;font-size:.9rem}
+.cookie-actions{display:flex;gap:8px;flex-shrink:0}
+.prose h2{margin-top:1.8em;font-size:1.3rem}
+.prose ul{padding-left:1.2em}
+.prose li{margin-bottom:.4em}
+.prose table{width:100%;border-collapse:collapse;font-size:.93rem;margin-bottom:1em}
+.prose th,.prose td{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top}
+.page-head{padding:44px 0 8px}
+.form-status{margin-top:12px;font-weight:500}
+.hp-field{position:absolute;left:-9999px;height:0;overflow:hidden}

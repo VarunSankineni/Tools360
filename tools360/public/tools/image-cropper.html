@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Cropper: Crop to Square, 16:9 and More, Free | Tools360</title>
+<meta name="description" content="Crop photos to the shape you need, and choose which part of the image to keep. Free, no sign-up, and your files never leave your device.">
+<link rel="canonical" href="https://tools360.example/tools/image-cropper.html">
+<meta property="og:title" content="Image Cropper: Crop to Square, 16:9 and More, Free | Tools360">
+<meta property="og:description" content="Crop photos to the shape you need, and choose which part of the image to keep. Free, no sign-up, and your files never leave your device.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tools360.example/tools/image-cropper.html">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="../assets/js/theme.js"></script>
+<link rel="stylesheet" href="../assets/css/variables.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/tool-page.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tools360.example/"}, {"@type": "ListItem", "position": 2, "name": "Image Cropper", "item": "https://tools360.example/tools/image-cropper.html"}]}</script></head>
+<body id="page-image-cropper" data-root="../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header id="site-header" class="site-header"><div class="container header-inner">
+<a href="../index.html" class="brand" id="brand-link" aria-label="Tools360 home"><span class="brand-mark" aria-hidden="true">T</span><span>Tools360</span></a>
+<button type="button" id="nav-toggle-btn" class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav id="site-nav" class="site-nav" aria-label="Main">
+<a href="../index.html#tool-grid" id="nav-tools">All tools</a>
+<a href="../pages/about.html" id="nav-about">About</a>
+<a href="../pages/contact.html" id="nav-contact">Contact</a>
+<button type="button" id="theme-toggle-btn" class="icon-btn" aria-pressed="false" aria-label="Switch between light and dark theme">Dark</button>
+</nav></div></header>
+<main id="main">
+<div class="container narrow tool-hero">
+<nav class="breadcrumb" id="image-cropper-breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span>Image Cropper</span></nav>
+<h1 id="image-cropper-title">Image Cropper</h1>
+<p class="lead" id="image-cropper-lead">Crop photos to the shape you need, and choose which part of the image to keep.</p>
+<section class="tool-panel" id="image-cropper-tool" aria-label="Image Cropper tool">
+<div class="dropzone" id="image-cropper-dropzone" tabindex="0" role="button" aria-label="Drop files here or press Enter to choose files">
+<p class="dz-title">Drop files here</p><p class="dz-sub">or</p>
+<button type="button" class="btn btn-primary" id="image-cropper-choose-btn">Choose files</button>
+<input type="file" id="image-cropper-file-input" hidden accept=".jpg,.jpeg,.png,.webp" multiple>
+<p class="dz-hint" id="image-cropper-hint">JPG, PNG or WebP, up to 50 MB each</p></div>
+<p class="error" id="image-cropper-error-msg" role="alert" hidden></p>
+<ul class="file-list" id="image-cropper-file-list"></ul>
+<div class="options" id="image-cropper-options" hidden><label class="field" for="image-cropper-ratio"><span>Shape</span><select id="image-cropper-ratio"><option value="1:1">Square (1:1)</option><option value="4:3">Standard (4:3)</option><option value="3:2">Photo (3:2)</option><option value="16:9">Widescreen (16:9)</option><option value="3:4">Portrait (3:4)</option><option value="9:16">Story (9:16)</option></select></label><label class="field" for="image-cropper-position"><span>Keep the focus on</span><select id="image-cropper-position"><option value="center">Center</option><option value="top">Top</option><option value="bottom">Bottom</option><option value="left">Left</option><option value="right">Right</option></select></label></div>
+<div class="actions"><button type="button" class="btn btn-cta" id="image-cropper-start-btn" disabled>Crop images</button>
+<button type="button" class="btn btn-ghost" id="image-cropper-reset-btn">Reset</button></div>
+<div class="progress" id="image-cropper-progress" hidden><div class="progress-track" id="image-cropper-progress-track" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar" id="image-cropper-progress-bar"></div></div><p class="progress-text" id="image-cropper-progress-text" aria-live="polite"></p></div>
+<div class="result" id="image-cropper-result" aria-live="polite" hidden></div>
+<p class="privacy-note" id="image-cropper-privacy-note">Your files stay on your device. Nothing is uploaded.</p>
+</section>
+<section class="section" id="image-cropper-howto"><h2>How to use Image Cropper</h2><ol class="steps" id="image-cropper-steps"><li>Add your images.</li><li>Pick a shape and which area to keep.</li><li>Select Crop images and download.</li></ol></section>
+<section class="section faq" id="image-cropper-faq"><h2>Questions and answers</h2><details><summary>Can I draw my own crop box?</summary><p>Not yet. This tool crops to common shapes automatically.</p></details><details><summary>Does cropping lower quality?</summary><p>No. The kept area stays at full resolution.</p></details><details><summary>Is it private?</summary><p>Yes.</p></details></section>
+<section class="section" id="image-cropper-related"><h2>More tools you may need</h2><div class="tool-grid"><a class="tool-tile" id="tile-image-resizer" href="../tools/image-resizer.html" data-cat="image" data-search="image resizer change image width and height in pixels. resize scale dimensions pixels width height"><span class="badge badge-image">IMG</span><h3>Image Resizer</h3><p>Change image width and height in pixels.</p></a><a class="tool-tile" id="tile-image-compressor" href="../tools/image-compressor.html" data-cat="image" data-search="image compressor reduce image file size and keep it sharp. reduce size smaller shrink photo jpg png webp"><span class="badge badge-image">IMG</span><h3>Image Compressor</h3><p>Reduce image file size and keep it sharp.</p></a><a class="tool-tile" id="tile-png-to-jpg" href="../tools/png-to-jpg.html" data-cat="convert" data-search="png to jpg convert png images to smaller jpg files. convert png jpeg image"><span class="badge badge-convert">JPG</span><h3>PNG to JPG</h3><p>Convert PNG images to smaller JPG files.</p></a></div></section>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"><div class="container">
+<div class="footer-grid">
+<div><a href="../index.html" class="brand" id="footer-brand"><span class="brand-mark" aria-hidden="true">T</span><span>Tools360</span></a>
+<p class="footer-note footer-tagline">Free file tools that run in your browser. Your files stay on your device.</p></div>
+<div><h3>PDF tools</h3><ul><li><a href="../tools/merge-pdf.html">Merge PDF</a></li><li><a href="../tools/split-pdf.html">Split PDF</a></li><li><a href="../tools/compress-pdf.html">Compress PDF</a></li><li><a href="../tools/rotate-pdf.html">Rotate PDF</a></li></ul></div>
+<div><h3>Image tools</h3><ul><li><a href="../tools/image-compressor.html">Image Compressor</a></li><li><a href="../tools/image-resizer.html">Image Resizer</a></li><li><a href="../tools/image-cropper.html">Image Cropper</a></li><li><a href="../tools/png-to-jpg.html">PNG to JPG</a></li></ul></div>
+<div><h3>Company</h3><ul>
+<li><a href="../pages/about.html">About</a></li><li><a href="../pages/contact.html">Contact</a></li>
+<li><a href="../pages/report-abuse.html">Report abuse</a></li><li><a href="../pages/privacy.html">Privacy policy</a></li>
+<li><a href="../pages/terms.html">Terms of use</a></li><li><a href="../pages/cookies.html">Cookie notice</a></li>
+<li><a href="#" id="cookie-settings-link">Cookie settings</a></li></ul></div>
+</div>
+<div class="footer-bottom"><span>&copy; <span id="footer-year">2026</span> Tools360. All rights reserved.</span><span>Not affiliated with any other file-tool website.</span></div>
+</div></footer>
+<script type="module" src="../assets/js/main.js"></script>
+<script type="module" src="../assets/js/tools/image-cropper.js"></script>
+</body>
+</html>

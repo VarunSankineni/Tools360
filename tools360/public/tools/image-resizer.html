@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Resizer: Change Image Size in Pixels, Free | Tools360</title>
+<meta name="description" content="Resize images to exact dimensions for social media, websites or forms. Free, no sign-up, and your files never leave your device.">
+<link rel="canonical" href="https://tools360.example/tools/image-resizer.html">
+<meta property="og:title" content="Image Resizer: Change Image Size in Pixels, Free | Tools360">
+<meta property="og:description" content="Resize images to exact dimensions for social media, websites or forms. Free, no sign-up, and your files never leave your device.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tools360.example/tools/image-resizer.html">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="../assets/js/theme.js"></script>
+<link rel="stylesheet" href="../assets/css/variables.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/tool-page.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tools360.example/"}, {"@type": "ListItem", "position": 2, "name": "Image Resizer", "item": "https://tools360.example/tools/image-resizer.html"}]}</script></head>
+<body id="page-image-resizer" data-root="../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header id="site-header" class="site-header"><div class="container header-inner">
+<a href="../index.html" class="brand" id="brand-link" aria-label="Tools360 home"><span class="brand-mark" aria-hidden="true">T</span><span>Tools360</span></a>
+<button type="button" id="nav-toggle-btn" class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav id="site-nav" class="site-nav" aria-label="Main">
+<a href="../index.html#tool-grid" id="nav-tools">All tools</a>
+<a href="../pages/about.html" id="nav-about">About</a>
+<a href="../pages/contact.html" id="nav-contact">Contact</a>
+<button type="button" id="theme-toggle-btn" class="icon-btn" aria-pressed="false" aria-label="Switch between light and dark theme">Dark</button>
+</nav></div></header>
+<main id="main">
+<div class="container narrow tool-hero">
+<nav class="breadcrumb" id="image-resizer-breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span>Image Resizer</span></nav>
+<h1 id="image-resizer-title">Image Resizer</h1>
+<p class="lead" id="image-resizer-lead">Resize images to exact dimensions for social media, websites or forms.</p>
+<section class="tool-panel" id="image-resizer-tool" aria-label="Image Resizer tool">
+<div class="dropzone" id="image-resizer-dropzone" tabindex="0" role="button" aria-label="Drop files here or press Enter to choose files">
+<p class="dz-title">Drop files here</p><p class="dz-sub">or</p>
+<button type="button" class="btn btn-primary" id="image-resizer-choose-btn">Choose files</button>
+<input type="file" id="image-resizer-file-input" hidden accept=".jpg,.jpeg,.png,.webp" multiple>
+<p class="dz-hint" id="image-resizer-hint">JPG, PNG or WebP, up to 50 MB each</p></div>
+<p class="error" id="image-resizer-error-msg" role="alert" hidden></p>
+<ul class="file-list" id="image-resizer-file-list"></ul>
+<div class="options" id="image-resizer-options" hidden><div class="field-row"><label class="field" for="image-resizer-width"><span>Width (px)</span><input type="number" id="image-resizer-width" min="1" max="10000" inputmode="numeric" placeholder="e.g. 1200"></label><label class="field" for="image-resizer-height"><span>Height (px)</span><input type="number" id="image-resizer-height" min="1" max="10000" inputmode="numeric" placeholder="e.g. 800"></label></div><label class="field check" for="image-resizer-keep"><input type="checkbox" id="image-resizer-keep" checked><span>Keep the original proportions</span></label></div>
+<div class="actions"><button type="button" class="btn btn-cta" id="image-resizer-start-btn" disabled>Resize images</button>
+<button type="button" class="btn btn-ghost" id="image-resizer-reset-btn">Reset</button></div>
+<div class="progress" id="image-resizer-progress" hidden><div class="progress-track" id="image-resizer-progress-track" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar" id="image-resizer-progress-bar"></div></div><p class="progress-text" id="image-resizer-progress-text" aria-live="polite"></p></div>
+<div class="result" id="image-resizer-result" aria-live="polite" hidden></div>
+<p class="privacy-note" id="image-resizer-privacy-note">Your files stay on your device. Nothing is uploaded.</p>
+</section>
+<section class="section" id="image-resizer-howto"><h2>How to use Image Resizer</h2><ol class="steps" id="image-resizer-steps"><li>Add your images.</li><li>Enter a width, a height, or both.</li><li>Select Resize images and download.</li></ol></section>
+<section class="section faq" id="image-resizer-faq"><h2>Questions and answers</h2><details><summary>What does keeping proportions do?</summary><p>The image is scaled to fit inside your size without stretching.</p></details><details><summary>Can I enlarge images?</summary><p>Yes, but enlarging can look soft because no new detail is added.</p></details><details><summary>Is it private?</summary><p>Yes.</p></details></section>
+<section class="section" id="image-resizer-related"><h2>More tools you may need</h2><div class="tool-grid"><a class="tool-tile" id="tile-image-cropper" href="../tools/image-cropper.html" data-cat="image" data-search="image cropper crop images to a square, 16:9 or other shape. crop square ratio trim cut photo"><span class="badge badge-image">IMG</span><h3>Image Cropper</h3><p>Crop images to a square, 16:9 or other shape.</p></a><a class="tool-tile" id="tile-image-compressor" href="../tools/image-compressor.html" data-cat="image" data-search="image compressor reduce image file size and keep it sharp. reduce size smaller shrink photo jpg png webp"><span class="badge badge-image">IMG</span><h3>Image Compressor</h3><p>Reduce image file size and keep it sharp.</p></a><a class="tool-tile" id="tile-jpg-to-png" href="../tools/jpg-to-png.html" data-cat="convert" data-search="jpg to png convert jpg images to lossless png. convert jpeg png image lossless"><span class="badge badge-convert">PNG</span><h3>JPG to PNG</h3><p>Convert JPG images to lossless PNG.</p></a></div></section>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"><div class="container">
+<div class="footer-grid">
+<div><a href="../index.html" class="brand" id="footer-brand"><span class="brand-mark" aria-hidden="true">T</span><span>Tools360</span></a>
+<p class="footer-note footer-tagline">Free file tools that run in your browser. Your files stay on your device.</p></div>
+<div><h3>PDF tools</h3><ul><li><a href="../tools/merge-pdf.html">Merge PDF</a></li><li><a href="../tools/split-pdf.html">Split PDF</a></li><li><a href="../tools/compress-pdf.html">Compress PDF</a></li><li><a href="../tools/rotate-pdf.html">Rotate PDF</a></li></ul></div>
+<div><h3>Image tools</h3><ul><li><a href="../tools/image-compressor.html">Image Compressor</a></li><li><a href="../tools/image-resizer.html">Image Resizer</a></li><li><a href="../tools/image-cropper.html">Image Cropper</a></li><li><a href="../tools/png-to-jpg.html">PNG to JPG</a></li></ul></div>
+<div><h3>Company</h3><ul>
+<li><a href="../pages/about.html">About</a></li><li><a href="../pages/contact.html">Contact</a></li>
+<li><a href="../pages/report-abuse.html">Report abuse</a></li><li><a href="../pages/privacy.html">Privacy policy</a></li>
+<li><a href="../pages/terms.html">Terms of use</a></li><li><a href="../pages/cookies.html">Cookie notice</a></li>
+<li><a href="#" id="cookie-settings-link">Cookie settings</a></li></ul></div>
+</div>
+<div class="footer-bottom"><span>&copy; <span id="footer-year">2026</span> Tools360. All rights reserved.</span><span>Not affiliated with any other file-tool website.</span></div>
+</div></footer>
+<script type="module" src="../assets/js/main.js"></script>
+<script type="module" src="../assets/js/tools/image-resizer.js"></script>
+</body>
+</html>

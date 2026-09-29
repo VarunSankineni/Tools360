@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Image Compressor: Reduce JPG, PNG and WebP Size, Free | Tools360</title>
+<meta name="description" content="Make photos and graphics smaller for websites, email and uploads. Free, no sign-up, and your files never leave your device.">
+<link rel="canonical" href="https://tools360.example/tools/image-compressor.html">
+<meta property="og:title" content="Image Compressor: Reduce JPG, PNG and WebP Size, Free | Tools360">
+<meta property="og:description" content="Make photos and graphics smaller for websites, email and uploads. Free, no sign-up, and your files never leave your device.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tools360.example/tools/image-compressor.html">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<script src="../assets/js/theme.js"></script>
+<link rel="stylesheet" href="../assets/css/variables.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/tool-page.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://tools360.example/"}, {"@type": "ListItem", "position": 2, "name": "Image Compressor", "item": "https://tools360.example/tools/image-compressor.html"}]}</script></head>
+<body id="page-image-compressor" data-root="../">
+<a class="skip-link" href="#main">Skip to content</a>
+<header id="site-header" class="site-header"><div class="container header-inner">
+<a href="../index.html" class="brand" id="brand-link" aria-label="Tools360 home"><span class="brand-mark" aria-hidden="true">T</span><span>Tools360</span></a>
+<button type="button" id="nav-toggle-btn" class="icon-btn nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav id="site-nav" class="site-nav" aria-label="Main">
+<a href="../index.html#tool-grid" id="nav-tools">All tools</a>
+<a href="../pages/about.html" id="nav-about">About</a>
+<a href="../pages/contact.html" id="nav-contact">Contact</a>
+<button type="button" id="theme-toggle-btn" class="icon-btn" aria-pressed="false" aria-label="Switch between light and dark theme">Dark</button>
+</nav></div></header>
+<main id="main">
+<div class="container narrow tool-hero">
+<nav class="breadcrumb" id="image-compressor-breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span>Image Compressor</span></nav>
+<h1 id="image-compressor-title">Image Compressor</h1>
+<p class="lead" id="image-compressor-lead">Make photos and graphics smaller for websites, email and uploads.</p>
+<section class="tool-panel" id="image-compressor-tool" aria-label="Image Compressor tool">
+<div class="dropzone" id="image-compressor-dropzone" tabindex="0" role="button" aria-label="Drop files here or press Enter to choose files">
+<p class="dz-title">Drop files here</p><p class="dz-sub">or</p>
+<button type="button" class="btn btn-primary" id="image-compressor-choose-btn">Choose files</button>
+<input type="file" id="image-compressor-file-input" hidden accept=".jpg,.jpeg,.png,.webp" multiple>
+<p class="dz-hint" id="image-compressor-hint">JPG, PNG or WebP, up to 50 MB each</p></div>
+<p class="error" id="image-compressor-error-msg" role="alert" hidden></p>
+<ul class="file-list" id="image-compressor-file-list"></ul>
+<div class="options" id="image-compressor-options" hidden><div class="field"><label for="image-compressor-quality">Quality</label><div class="range-line"><input type="range" id="image-compressor-quality" min="30" max="95" value="70"><span class="range-value" id="image-compressor-quality-value">70%</span></div></div><label class="field" for="image-compressor-format"><span>Output format</span><select id="image-compressor-format"><option value="keep">Keep the original format</option><option value="webp">Convert to WebP (smallest)</option></select><small>PNG files keep their quality. Choose WebP to shrink them much further.</small></label><label class="field" for="image-compressor-maxwidth"><span>Maximum width in pixels (optional)</span><input type="number" id="image-compressor-maxwidth" min="1" max="10000" inputmode="numeric" placeholder="e.g. 1920"><small>Wider images are scaled down. Leave empty to keep the size.</small></label></div>
+<div class="actions"><button type="button" class="btn btn-cta" id="image-compressor-start-btn" disabled>Compress images</button>
+<button type="button" class="btn btn-ghost" id="image-compressor-reset-btn">Reset</button></div>
+<div class="progress" id="image-compressor-progress" hidden><div class="progress-track" id="image-compressor-progress-track" role="progressbar" aria-label="Progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar" id="image-compressor-progress-bar"></div></div><p class="progress-text" id="image-compressor-progress-text" aria-live="polite"></p></div>
+<div class="result" id="image-compressor-result" aria-live="polite" hidden></div>
+<p class="privacy-note" id="image-compressor-privacy-note">Your files stay on your device. Nothing is uploaded.</p>
+</section>
+<section class="section" id="image-compressor-howto"><h2>How to use Image Compressor</h2><ol class="steps" id="image-compressor-steps"><li>Add your images.</li><li>Choose a quality level. 70% is a good start.</li><li>Select Compress images and check the size saved.</li></ol></section>
+<section class="section faq" id="image-compressor-faq"><h2>Questions and answers</h2><details><summary>How much smaller will they get?</summary><p>Photos often shrink 50 to 80% with little visible change.</p></details><details><summary>Can I compress many images?</summary><p>Yes. Download them together as a ZIP.</p></details><details><summary>Is it private?</summary><p>Yes. Nothing is uploaded.</p></details></section>
+<section class="section" id="image-compressor-related"><h2>More tools you may need</h2><div class="tool-grid"><a class="tool-tile" id="tile-image-resizer" href="../tools/image-resizer.html" data-cat="image" data-search="image resizer change image width and height in pixels. resize scale dimensions pixels width height"><span class="badge badge-image">IMG</span><h3>Image Resizer</h3><p>Change image width and height in pixels.</p></a><a class="tool-tile" id="tile-png-to-jpg" href="../tools/png-to-jpg.html" data-cat="convert" data-search="png to jpg convert png images to smaller jpg files. convert png jpeg image"><span class="badge badge-convert">JPG</span><h3>PNG to JPG</h3><p>Convert PNG images to smaller JPG files.</p></a><a class="tool-tile" id="tile-webp-converter" href="../tools/webp-converter.html" data-cat="convert" data-search="webp converter convert between webp, jpg and png. webp jpg png convert image format"><span class="badge badge-convert">WEBP</span><h3>WebP Converter</h3><p>Convert between WebP, JPG and PNG.</p></a></div></section>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"><div class="container">
+<div class="footer-grid">
+<div><a href="../index.html" class="brand" id="footer-brand"><span class="brand-mark" aria-hidden="true">T</span><span>Tools360</span></a>
+<p class="footer-note footer-tagline">Free file tools that run in your browser. Your files stay on your device.</p></div>
+<div><h3>PDF tools</h3><ul><li><a href="../tools/merge-pdf.html">Merge PDF</a></li><li><a href="../tools/split-pdf.html">Split PDF</a></li><li><a href="../tools/compress-pdf.html">Compress PDF</a></li><li><a href="../tools/rotate-pdf.html">Rotate PDF</a></li></ul></div>
+<div><h3>Image tools</h3><ul><li><a href="../tools/image-compressor.html">Image Compressor</a></li><li><a href="../tools/image-resizer.html">Image Resizer</a></li><li><a href="../tools/image-cropper.html">Image Cropper</a></li><li><a href="../tools/png-to-jpg.html">PNG to JPG</a></li></ul></div>
+<div><h3>Company</h3><ul>
+<li><a href="../pages/about.html">About</a></li><li><a href="../pages/contact.html">Contact</a></li>
+<li><a href="../pages/report-abuse.html">Report abuse</a></li><li><a href="../pages/privacy.html">Privacy policy</a></li>
+<li><a href="../pages/terms.html">Terms of use</a></li><li><a href="../pages/cookies.html">Cookie notice</a></li>
+<li><a href="#" id="cookie-settings-link">Cookie settings</a></li></ul></div>
+</div>
+<div class="footer-bottom"><span>&copy; <span id="footer-year">2026</span> Tools360. All rights reserved.</span><span>Not affiliated with any other file-tool website.</span></div>
+</div></footer>
+<script type="module" src="../assets/js/main.js"></script>
+<script type="module" src="../assets/js/tools/image-compressor.js"></script>
+</body>
+</html>

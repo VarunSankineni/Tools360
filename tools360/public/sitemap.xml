@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tools360.example/</loc></url>
+  <url><loc>https://tools360.example/tools/merge-pdf.html</loc></url>
+  <url><loc>https://tools360.example/tools/split-pdf.html</loc></url>
+  <url><loc>https://tools360.example/tools/compress-pdf.html</loc></url>
+  <url><loc>https://tools360.example/tools/rotate-pdf.html</loc></url>
+  <url><loc>https://tools360.example/tools/pdf-to-jpg.html</loc></url>
+  <url><loc>https://tools360.example/tools/jpg-to-pdf.html</loc></url>
+  <url><loc>https://tools360.example/tools/png-to-jpg.html</loc></url>
+  <url><loc>https://tools360.example/tools/jpg-to-png.html</loc></url>
+  <url><loc>https://tools360.example/tools/webp-converter.html</loc></url>
+  <url><loc>https://tools360.example/tools/image-compressor.html</loc></url>
+  <url><loc>https://tools360.example/tools/image-resizer.html</loc></url>
+  <url><loc>https://tools360.example/tools/image-cropper.html</loc></url>
+  <url><loc>https://tools360.example/tools/qr-generator.html</loc></url>
+  <url><loc>https://tools360.example/tools/image-to-base64.html</loc></url>
+  <url><loc>https://tools360.example/pages/about.html</loc></url>
+  <url><loc>https://tools360.example/pages/contact.html</loc></url>
+  <url><loc>https://tools360.example/pages/privacy.html</loc></url>
+  <url><loc>https://tools360.example/pages/terms.html</loc></url>
+  <url><loc>https://tools360.example/pages/cookies.html</loc></url>
+  <url><loc>https://tools360.example/pages/report-abuse.html</loc></url>
+</urlset>
